@@ -1,0 +1,27 @@
+{
+  "appId": "kr.esea.eguardian",
+  "appName": "E지킴이",
+  "webDir": "www",
+  "backgroundColor": "#0E1B2A",
+  "android": {
+    "adjustMarginsForEdgeToEdge": "auto"
+  },
+  "ios": {
+    "contentInset": "never",
+    "backgroundColor": "#0E1B2A"
+  },
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 1500,
+      "launchAutoHide": true,
+      "backgroundColor": "#0E1B2A",
+      "showSpinner": false,
+      "androidScaleType": "CENTER_CROP"
+    },
+    "StatusBar": {
+      "style": "DARK",
+      "backgroundColor": "#0E1B2A",
+      "overlaysWebView": false
+    }
+  }
+}

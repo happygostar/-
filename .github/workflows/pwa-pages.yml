@@ -1,0 +1,29 @@
+# 웹앱(PWA) 배포 — GitHub Pages. 배포 주소를 휴대폰에서 열고 '홈 화면에 추가'하면 앱처럼 설치됩니다.
+name: Deploy PWA
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - run: npm ci && npm run vendor
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: www
+      - uses: actions/deploy-pages@v4

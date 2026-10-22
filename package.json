@@ -1,0 +1,33 @@
+{
+  "name": "e-guardian",
+  "version": "1.0.0",
+  "private": true,
+  "description": "E지킴이 — 에너지안보환경지킴이 전용 활동관리 앱 (사단법인 에너지안보환경협회)",
+  "scripts": {
+    "vendor": "node scripts/vendor.js",
+    "sync": "npm run vendor && npx cap sync",
+    "android": "npm run sync && npx cap open android",
+    "ios": "npm run sync && npx cap open ios",
+    "assets": "npx capacitor-assets generate --assetPath resources",
+    "serve": "npx http-server www -p 8080 -c-1"
+  },
+  "dependencies": {
+    "@capacitor/app": "^7.1.2",
+    "@capacitor/camera": "^7.0.5",
+    "@capacitor/core": "^7.6.9",
+    "@capacitor/filesystem": "^7.1.9",
+    "@capacitor/geolocation": "^7.1.8",
+    "@capacitor/haptics": "^7.0.5",
+    "@capacitor/share": "^7.0.4",
+    "@capacitor/splash-screen": "^7.0.5",
+    "@capacitor/status-bar": "^7.0.6",
+    "jsqr": "^1.4.0",
+    "leaflet": "^1.9.4"
+  },
+  "devDependencies": {
+    "@capacitor/android": "^7.6.9",
+    "@capacitor/assets": "^3.0.5",
+    "@capacitor/cli": "^7.6.9",
+    "@capacitor/ios": "^7.6.9"
+  }
+}

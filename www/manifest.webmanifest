@@ -1,0 +1,17 @@
+{
+  "name": "E지킴이 — 에너지안보환경지킴이",
+  "short_name": "E지킴이",
+  "description": "에너지안보환경지킴이 전용 점검·신고·보수 관리 앱 (사단법인 에너지안보환경협회)",
+  "lang": "ko",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#0E1B2A",
+  "theme_color": "#0E1B2A",
+  "icons": [
+    { "src": "assets/icons/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icons/icon-512.png", "sizes": "512x512", "type": "image/png" },
+    { "src": "assets/icons/icon-maskable-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable" }
+  ]
+}
